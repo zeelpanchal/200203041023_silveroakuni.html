@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>Hover element-selector or child combinator</title>
+		<style type="text/css">
+			#MainUL li ul li {display:none;color:blue}
+			#MainUL li:hover ul li {display:block;}
+			#MainUL li:hover ul li ul li {display:none;}
+			#MainUL li ul li:hover ul li {display:block}
+			#MainUL li:hover{color:red}
+            /* whenever you hover on any element of this ul or li,it displays the hovered element with red color. */
+		</style>
+	</head>
+	<body>
+		<ul id="MainUL">
+			<li>Details
+				<ul>
+					<li>First Name
+					<ul>
+						<li>Zeel</li>
+						<li>Devyansh</li>
+						<li>Parth</li>
+						<li>Aakash</li>
+					</ul>
+					</li>
+					<li>Middle Name</li>
+					<li>Division</li>
+
+				</ul>
+			</li>
+		</ul>
+	</body>
+</html>	
